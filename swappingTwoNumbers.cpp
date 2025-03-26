@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// CALL BY VALUE
 int swap_Value(int a, int b){
     int temp;
     temp = a;
@@ -8,6 +9,7 @@ int swap_Value(int a, int b){
     b = temp;
 }
 
+// CALL BY REFERENCE
 int swap_Reference(int &a, int &b){
     int temp;
     temp = a;
@@ -15,6 +17,7 @@ int swap_Reference(int &a, int &b){
     b = temp;
 }
 
+// CALL BY POINTER
 int swap_pointer(int *a, int *b){
     int temp;
     temp = *a;
