@@ -4,16 +4,23 @@ using namespace std;
 class Student{
 public:
     string name;
-    double cgpa;
+    double* cgpaPtr;
     
     Student(string name, double cgpa){
         this->name = name;
-        this->cgpa = cgpa;
+        cgpaPtr = new double;
+        *cgpaPtr = cgpa;
+    } 
+
+    // Destructor
+    ~Student(){
+        cout << "Hi, I delete everything";
+        delete cgpaPtr; // For deleting Dynamically allocated memory
     }
 
     void getInfo(){
         cout << "Name: " << name << endl;
-        cout << "CGPA: " << cgpa << endl;
+        cout << "CGPA: " << *cgpaPtr << endl;
     }
 };
 
