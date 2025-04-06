@@ -6,11 +6,6 @@ class Teacher{
 private:
     double salary;
 public:
-    // Constructor
-    Teacher(){
-        department = "Computer Science";
-    }
-    
     // properties / attributes
     string name;
     string subject;
