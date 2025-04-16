@@ -27,8 +27,8 @@ public:
 };
 
 int main() {
-    Teacher t1; // Constructor call
-
+    Teacher t1; 
+    
     t1.name = "Ramesh";
     t1.subject = "Maths";
     t1.department = "Computer Science";

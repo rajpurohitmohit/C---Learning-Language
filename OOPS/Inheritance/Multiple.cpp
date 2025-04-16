@@ -6,6 +6,7 @@ public:
     string name;
     int age;
 };
+
 // Multiple Inheritance
 class Teacher{
 public:
