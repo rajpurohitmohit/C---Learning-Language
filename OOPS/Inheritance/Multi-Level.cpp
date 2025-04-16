@@ -6,7 +6,9 @@ public:
     string name;
     int age;
 };
+
 // Multi - Level Inheritance
+
 class Student : public Person{
     // Name, Age, Rollno
 public:
